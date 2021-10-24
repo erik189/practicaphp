@@ -61,20 +61,24 @@
              echo "<div class=\"col-12 col-sm-3\"><h1 class=text-cust>Email</h1></div>";
              echo "<div class=\"col-12 col-sm-3\"><h1 class=text-cust>Dni</h1></div>";
              echo "</div>";
-             
+             ?> 
 
-             <?php for( $i = 0; $i < count($registro); $i++) {  ?>
+             <?php for( $i = 0; $i < count($registro); $i++){  ?>
 
                 <div class="row">
                 
-               <div class="col-12 col-sm-3"> <? echo $registro[$i]["nombre"];?> </div>
-               <div class="col-12 col-sm-2"> <? echo $registro[$i]["apellido"]; ?> </div>
-               <div class="col-12 col-sm-1"> <? echo $registro[$i]["edad"];  ?> </div>
-               <div class="col-12 col-sm-3"> <? echo $registro[$i]["email"]; ?> </div>
-               <div class="col-12 col-sm-3"> <? echo $registro[$i]["dni"];   ?> </div>
+               <div class="col-12 col-sm-3"> <? echo$registro[$i]["nombre"]; ?> </div>
+               <div class="col-12 col-sm-2"> <? echo$registro[$i]["apellido"]; ?> </div>
+               <div class="col-12 col-sm-1"> <? echo$registro[$i]["edad"];  ?> </div>
+               <div class="col-12 col-sm-3"> <? echo$registro[$i]["email"]; ?> </div>
+               <div class="col-12 col-sm-3"> <? echo$registro[$i]["dni"];   ?> </div>
               </div> 
+              <?php
              }
+             
              ?>
+             
+             
           </header>
           </div>
 </body>
